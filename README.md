@@ -3,5 +3,5 @@
 ## Course 1: Lectures
 
 
-## Course 2: Tutorials 
+## Course 2: Tutorials
 
