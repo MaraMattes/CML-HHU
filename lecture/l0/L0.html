@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="Intro_CML_files/libs/clipboard/clipboard.min.js"></script>
-<script src="Intro_CML_files/libs/quarto-html/tabby.min.js"></script>
-<script src="Intro_CML_files/libs/quarto-html/popper.min.js"></script>
-<script src="Intro_CML_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="Intro_CML_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="Intro_CML_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Intro_CML_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="Intro_CML_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="L0_files/libs/clipboard/clipboard.min.js"></script>
+<script src="L0_files/libs/quarto-html/tabby.min.js"></script>
+<script src="L0_files/libs/quarto-html/popper.min.js"></script>
+<script src="L0_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="L0_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="L0_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="L0_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="L0_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.433">
 
   <title>Causal Machine Learning</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="Intro_CML_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="Intro_CML_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="L0_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="L0_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,13 +29,13 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="Intro_CML_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="Intro_CML_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="Intro_CML_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="Intro_CML_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="Intro_CML_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="Intro_CML_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="Intro_CML_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="L0_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="L0_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="L0_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="L0_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="L0_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="L0_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="L0_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -327,7 +327,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Causal Machine Learning</h1>
-  <p class="subtitle">HHU summer term 2025 <br> April 16, 2024 <br> Prof.&nbsp;Dr.&nbsp;Jannis Kück</p>
+  <p class="subtitle">HHU summer term 2025 <br> April 16, 2025 <br> Prof.&nbsp;Dr.&nbsp;Jannis Kück</p>
 
 <div class="quarto-title-authors">
 </div>
@@ -343,38 +343,61 @@
 <li>Contact: kueck@dice.hhu.de</li>
 </ul>
 </section>
-<section id="credits" class="slide level2">
-<h2>Credits</h2>
-<p>The course is based on the book “Applied Causal Inference powered by ML and AI” (available <a href="https://causalml-book.org/">here</a>). I would like to thank the authors Victor Chernozhukov, Christian Hansen, Nathan Kallus, Martin Spindler and Vasilis Syrgkanis for sharing the materials.</p>
-</section>
-<section id="description" class="slide level2">
-<h2>Description</h2>
-<p>The course will cover basic principles of <strong>causal inference</strong> and <strong>machine learning</strong> and how the two can be combined in practice to deliver estimates for causal parameters in real world datasets. The lectures will cover fundamentals, e.g.&nbsp;econometric models and DAGs and introduce tools for statistical inference based on machine learning (lasso, random forest, …) to <strong>infer</strong> causal parameters and <strong>quantify uncertainty</strong>. We apply machine learning methods to handle <strong>high-dimensional data</strong>. The tutorials will involve real world and simulated data analysis in <strong>R</strong> based on these methodologies. Lectures and tutorials will be on-site and will not be recorded.</p>
-</section>
-<section id="causal-machine-learning-combines-two-literatures" class="slide level2">
-<h2>Causal machine learning combines two literatures</h2>
-<p><strong>Machine Learning</strong>:</p>
-<p>Machine learning algorithms build a model based on sample data, known as training data, in order to make good predictions or decisions. Often, these methods are applied without further consideration even if the goal is to uncover some causal answers:</p>
+<section id="organizational-matters" class="slide level2">
+<h2>Organizational Matters</h2>
+<style>
+.blue-box {
+    border: 2px solid red;  /* Blaue Umrandung */
+    padding: 10px;           /* Innenabstand */
+    margin: 10px;            /* Außenabstand */
+    background-color: #f0f8ff; /* Hintergrundfarbe, hier ein sehr helles Blau */
+}
+</style>
+<p><strong>Lectures</strong></p>
 <ul>
-<li>Resource allocation</li>
-<li>Predict the quality of a new promotion</li>
-<li>Forecast the turnover for a new product</li>
+<li>Wednesday (16:30-18:00h)</li>
 </ul>
-<p><strong>Causality</strong>:</p>
-<p>Influence by which one event contributes to the production of another event where the cause is partly responsible for the effect.</p>
-<p><span class="math inline">\(\Rightarrow\)</span> <strong>Causal Machine Learning:</strong> Use the predictive power of modern machine learning algorithms to provide precise estimates for causal effects/parameters!</p>
-</section>
-<section id="what-to-expect" class="slide level2">
-<h2>What to expect</h2>
+<p><strong>Tutorials</strong></p>
 <ul>
-<li>Recap/learn the Causal Inference and Machine Learning basics</li>
-<li>Learn econometric models for high-dimensional data</li>
-<li>Learn recent Causal ML methods for estimation of (average) treatment effects</li>
-<li>Get to know recent software (e.g.&nbsp;DoubleML package in R) to apply Causal ML algorithm in practice</li>
-<li>Guest lecture with one of the developers of the DoubleML package</li>
+<li>Thursday (08:30 - 10:00h)</li>
+<li>We will work with R Notebooks. You can use <a href="https://code.visualstudio.com/docs/languages/r">R in VS Code</a> or <a href="https://colab.research.google.com/">Google Colab</a> for this.</li>
+<li>The notebooks will be provided <a href="https://maramattes.github.io/CML-HHU/">here</a>. <!-- -   Please make sure you can log in to your Google account and check if you can open the following notebook from this [link](https://drive.google.com/file/d/1lvEb65tY0d0X_IngFwO2YxJwTciJvXAF/view?usp=sharing) (click on "open with Google Colaboratory").
+- If you prefer to work locally on your device, feel free to use RStudio available [here](https://posit.co/download/rstudio-desktop/). --></li>
 </ul>
-
-<img data-src="logo.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
+<p><strong>Grading</strong></p>
+<ul>
+<li>Oral exam at the end of the semester</li>
+</ul>
+</section>
+<section id="organizational-matters-1" class="slide level2">
+<h2>Organizational Matters</h2>
+<style>
+.blue-box {
+    border: 2px solid red;  /* Blaue Umrandung */
+    padding: 10px;           /* Innenabstand */
+    margin: 10px;            /* Außenabstand */
+    background-color: #f0f8ff; /* Hintergrundfarbe, hier ein sehr helles Blau */
+}
+</style>
+<p><strong>Lectures</strong></p>
+<div class="blue-box">
+<ul>
+<li>Wednesday (16:30-18:00h) Please note that there will be no lecture on April, 23!</li>
+</ul>
+</div>
+<p><strong>Tutorials</strong></p>
+<div class="blue-box">
+<ul>
+<li>Thursday (08:30 - 10:00h) Please note that there will be no tutorial on April, 24!</li>
+</ul>
+</div>
+<!-- -   We will work on R Notebooks using [Google Colab](https://colab.research.google.com/). -->
+<!-- -   Links to the notebooks will be provided via lecture notes or google docs. -->
+<!-- -   Please make sure you can log in to your Google account and check if you can open the following notebook from this [link](https://drive.google.com/file/d/1lvEb65tY0d0X_IngFwO2YxJwTciJvXAF/view?usp=sharing) (click on "open with Google Colaboratory"). -->
+<!-- - If you prefer to work locally on your device, feel free to use RStudio available [here](https://posit.co/download/rstudio-desktop/). -->
+<!-- **Grading** -->
+<!-- - Oral exam at the end of the semester (probably on July 25, 2024) -->
+</section>
 <section id="course-outline" class="slide level2">
 <h2>Course Outline</h2>
 <p>The course will cover the following topics:<sup>1</sup></p>
@@ -389,35 +412,47 @@
 <li>Double Machine Learning</li>
 <li>Optional Advanced Topics (high-dimensional IV models, Difference-in-Differences with Machine Learning, Panel data, Sensitivity Analysis, …)</li>
 </ul>
+<!-- ## Description -->
+<!-- The course will cover basic principles of **causal inference** and **machine learning** and how the two can be combined in practice to deliver estimates for causal parameters in real world datasets.  -->
+<!-- The lectures will cover fundamentals, e.g. econometric models and DAGs and introduce tools for statistical inference based on machine learning (lasso, random forest, ...) to **infer** causal parameters and **quantify uncertainty**. We apply machine learning methods to handle **high-dimensional data**. The tutorials will involve real world and simulated data analysis in **R** based on these methodologies. -->
+<!-- Lectures and tutorials will be on-site and will not be recorded.  -->
 <aside><ol class="aside-footnotes"><li id="fn1"><p>Any feedback on slides and the content will be greatly appreciated as I iterate over the material</p></li></ol></aside></section>
-<section id="organizational-matters" class="slide level2">
-<h2>Organizational Matters</h2>
-<style>
-.blue-box {
-    border: 2px solid red;  /* Blaue Umrandung */
-    padding: 10px;           /* Innenabstand */
-    margin: 10px;            /* Außenabstand */
-    background-color: #f0f8ff; /* Hintergrundfarbe, hier ein sehr helles Blau */
-}
-</style>
-<p><strong>Lectures</strong></p>
+<section id="causal-machine-learning" class="slide level2">
+<h2>Causal machine learning</h2>
+
+<!-- ## Causal machine learning combines two literatures -->
+<!-- **Machine Learning**: -->
+<!-- Machine learning algorithms build a model based on sample data, known as training data, in order to make good predictions or decisions. Often, these methods are applied without further consideration even if the goal is to uncover some causal answers: -->
+<!-- -   Resource allocation -->
+<!-- -   Predict the quality of a new promotion -->
+<!-- -   Forecast the turnover for a new product -->
+<!-- **Causality**: -->
+<!-- Influence by which one event contributes to the production of another event where the cause is partly responsible for the effect. -->
+<!-- $\Rightarrow$ **Causal Machine Learning:** Use the predictive power of modern machine learning algorithms to provide precise estimates for causal effects/parameters!  -->
+<img data-src="CML.jpg" width="300" class="r-stretch quarto-figure-center"><p class="caption">© 2024 Economic AI</p></section>
+<section id="prediction-vs.-causal-inference" class="slide level2">
+<h2>Prediction vs.&nbsp;Causal Inference</h2>
+
+<img data-src="pML.jpg" width="300" class="r-stretch quarto-figure-center"><p class="caption">© 2024 Economic AI</p></section>
+<section id="causal-inference" class="slide level2">
+<h2>Causal Inference</h2>
+
+<img data-src="causalinference.jpg" width="300" class="r-stretch quarto-figure-center"><p class="caption">© 2024 Economic AI</p></section>
+<section id="causal-inference-and-machine-learning" class="slide level2">
+<h2>Causal Inference and Machine Learning</h2>
+
+<img data-src="CIandML.jpg" width="300" class="r-stretch quarto-figure-center"><p class="caption">© 2024 Economic AI</p></section>
+<section id="what-to-expect" class="slide level2">
+<h2>What to expect</h2>
 <ul>
-<li>Wednesday (16:30-18:00h)</li>
-<li>Please note that there will be no lecture on April, 23!</li>
+<li>Recap/learn the <strong>Causal Inference</strong> and <strong>Machine Learning</strong> basics</li>
+<li>Learn econometric models for high-dimensional data</li>
+<li>Learn recent Causal ML methods (e.g.&nbsp;<strong>Double Machine Learning</strong>) for estimation of (average) treatment effects</li>
+<li>Get to know recent software (e.g.&nbsp;DoubleML package in R) to apply Causal ML algorithm in practice</li>
+<li>Guest lecture with one of the developers of the DoubleML package</li>
 </ul>
-<p><strong>Tutorials</strong></p>
-<ul>
-<li>Thursday (08:30 - 10:00h)</li>
-<li>Please note that there will be no tutorial on April, 24!</li>
-<li>We will work with R Notebooks. You can use <a href="https://code.visualstudio.com/docs/languages/r">R in VS Code</a> or <a href="https://colab.research.google.com/">Google Colab</a> for this.</li>
-<li>The notebooks will be provided <a href="https://maramattes.github.io/CML-HHU/">here</a>. <!-- -   Please make sure you can log in to your Google account and check if you can open the following notebook from this [link](https://drive.google.com/file/d/1lvEb65tY0d0X_IngFwO2YxJwTciJvXAF/view?usp=sharing) (click on "open with Google Colaboratory").
-- If you prefer to work locally on your device, feel free to use RStudio available [here](https://posit.co/download/rstudio-desktop/). --></li>
-</ul>
-<p><strong>Grading</strong></p>
-<ul>
-<li>Oral exam at the end of the semester</li>
-</ul>
-</section>
+
+<img data-src="logo.png" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
 <section id="some-suggested-textbooks" class="slide level2">
 <h2>Some suggested textbooks</h2>
 <ul>
@@ -429,6 +464,10 @@
 <li><p>Martin Huber: <a href="https://mitpress.mit.edu/9780262545914/causal-analysis/">Causal Analysis: Impact Evaluation and Causal Machine Learning with Applications in R</a></p></li>
 <li><p>Great <a href="https://github.com/MCKnaus/causalML-teaching">causalML course</a> by Michael Knaus (University of Tübingen) with a focus on impact/policy/program evaluation.</p></li>
 </ul>
+</section>
+<section id="credits" class="slide level2">
+<h2>Credits</h2>
+<p>The course is based on the book “Applied Causal Inference powered by ML and AI” (available <a href="https://causalml-book.org/">here</a>). I would like to thank the authors Victor Chernozhukov, Christian Hansen, Nathan Kallus, Martin Spindler and Vasilis Syrgkanis for sharing the materials.</p>
 <div class="footer footer-default">
 <p>Causal ML</p>
 </div>
@@ -438,20 +477,20 @@
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="Intro_CML_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="L0_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="Intro_CML_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="Intro_CML_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="Intro_CML_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="Intro_CML_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="Intro_CML_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="Intro_CML_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="Intro_CML_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="Intro_CML_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="Intro_CML_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="Intro_CML_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="L0_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
