@@ -16,3 +16,4 @@
 * [Overfitting ](./tutorial/tutorial-1/r_notebook_linear_model_overfiting_hhu.ipynb)
 * [Linear Wage Prediction ](./tutorial/tutorial-1/ols_for_wage_prediction_hhu.ipynb)
 * [Gender Pay Gap ](./tutorial/tutorial-1/ols_for_gender_wage_gap_inference_hhu.ipynb)
+    - Dataset: [classification_1.csv](./data/wage2015_subsample_inference.rdata)
