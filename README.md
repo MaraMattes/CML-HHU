@@ -13,9 +13,11 @@
 * [How to use R in VS Code ](./lecture/l0/R in VS Code/R in VS Code.html)
 
 ### Tutorial 1
+
+* Dataset: [wage2015_subsample_inference.rdata](./data/wage2015_subsample_inference.rdata)
+
 * [Overfitting ](./tutorial/tutorial-1/r_notebook_linear_model_overfiting_hhu.ipynb)
     - Solution: [Overfitting](./tutorial/tutorial-1/r_notebook_linear_model_overfiting_hhu_solution.ipynb)
 * [Linear Wage Prediction ](./tutorial/tutorial-1/ols_for_wage_prediction_hhu.ipynb)
     - Solution: [Linear Wage Prediction](./tutorial/tutorial-1/ols_for_wage_prediction_hhu_solution.ipynb)
 * [Gender Pay Gap ](./tutorial/tutorial-1/ols_for_gender_wage_gap_inference_hhu.ipynb)
-* Dataset: [wage2015_subsample_inference.rdata](./data/wage2015_subsample_inference.rdata)
