@@ -1,8 +1,10 @@
 # Lecture Slides and Tutorials
 
-**The first lecture will take place on April 16.**
+The first lecture will take place on April 16.
 
-**There will be no lectures and tutorials during the weeks of April 7-11 and April 21-25.**
+There will be no lectures and tutorials during the weeks of April 7-11 and April 21-25.
+
+**The lecure on May 7 will take place in room 2421.U1.84.**
 
 ## Course 1: Lectures
 * [Lecture 0 ](./lecture/l0/L0.html)
