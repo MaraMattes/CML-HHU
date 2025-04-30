@@ -12,6 +12,7 @@ There will be no lectures and tutorials during the weeks of April 7-11 and April
 * [Lecture 0 ](./lecture/l0/L0.html)
 * [Lecture 1 ](./lecture/l1/L1.html)
 * [Lecture 2 ](./lecture/l2/L2.html)
+* [Lecture 3 ](./lecture/l3/L3.html)
 
 ## Course 2: Tutorials
 
