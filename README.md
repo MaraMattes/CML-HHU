@@ -6,7 +6,7 @@ There will be no lectures and tutorials during the weeks of April 7-11 and April
 
 **The lecure on May 7 will take place in room 2421.U1.84.**
 
-**Guest lecture with one of the developers of the DoubleML package will take place on July 9.
+**Guest lecture with one of the developers of the DoubleML package will take place on July 9.**
 
 ## Course 1: Lectures
 * [Lecture 0 ](./lecture/l0/L0.html)
