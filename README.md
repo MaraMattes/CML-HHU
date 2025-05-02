@@ -18,8 +18,8 @@ There will be no lectures and tutorials during the weeks of April 7-11 and April
 
 * [How to use R in VS Code ](./lecture/l0/R in VS Code/R in VS Code.html)
 
-* Dataset: 
-[wage2015_subsample_inference.rdata](./data/wage2015_subsample_inference.rdata)
+* Data: \
+[wage2015_subsample_inference.rdata](./data/wage2015_subsample_inference.rdata)\
 [penn_jaedat.sec](./data/penn_jaedat.sec)
 
 ### Tutorial 1
