@@ -29,11 +29,11 @@ The lecure on May 7 will take place in room 2421.U1.84.
 * [Linear Wage Prediction ](./tutorial/tutorial-1/ols_for_wage_prediction_hhu.ipynb)
     - Solution: [Linear Wage Prediction](./tutorial/tutorial-1/ols_for_wage_prediction_hhu_solution.ipynb)
 * [Gender Pay Gap ](./tutorial/tutorial-1/ols_for_gender_wage_gap_inference_hhu.ipynb)
-    - Solution: [Linear Wage Prediction](./tutorial/tutorial-1/ols_for_gender_wage_gap_inference_hhu_solution.ipynb)
+    - Solution: [Gender Pay Gap](./tutorial/tutorial-1/ols_for_gender_wage_gap_inference_hhu_solution.ipynb)
 
 ### Tutorial 2
 
 * [RCT Examples ](./tutorial/tutorial-2/r_notebook_some_rct_examples_hhu.ipynb)
-    - Solution: [Linear Wage Prediction](./tutorial/tutorial-2/r_notebook_some_rct_examples_hhu_solution.ipynb)
+    - Solution: [RCT Examples](./tutorial/tutorial-2/r_notebook_some_rct_examples_hhu_solution.ipynb)
 * [Pennsylvania reemployment bonus experiment ](./tutorial/tutorial-2/analyzing_rct_reemployment_experiment_hhu.ipynb)
-    - Solution: [Linear Wage Prediction](./tutorial/tutorial-2/analyzing_rct_reemployment_experiment_hhu_solution.ipynb)
+    - Solution: [Pennsylvania reemployment bonus experiment](./tutorial/tutorial-2/analyzing_rct_reemployment_experiment_hhu_solution.ipynb)
