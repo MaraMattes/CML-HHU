@@ -4,7 +4,7 @@ The first lecture will take place on April 16.
 
 There will be no lectures and tutorials during the weeks of April 7-11 and April 21-25.
 
-**The lecure on May 7 will take place in room 2421.U1.84.**
+The lecure on May 7 will take place in room 2421.U1.84.
 
 **Guest lecture with one of the developers of the DoubleML package will take place on July 9.**
 
@@ -29,9 +29,11 @@ There will be no lectures and tutorials during the weeks of April 7-11 and April
 * [Linear Wage Prediction ](./tutorial/tutorial-1/ols_for_wage_prediction_hhu.ipynb)
     - Solution: [Linear Wage Prediction](./tutorial/tutorial-1/ols_for_wage_prediction_hhu_solution.ipynb)
 * [Gender Pay Gap ](./tutorial/tutorial-1/ols_for_gender_wage_gap_inference_hhu.ipynb)
-
+    - Solution: [Linear Wage Prediction](./tutorial/tutorial-1/ols_for_gender_wage_gap_inference_hhu_solution.ipynb)
 
 ### Tutorial 2
 
 * [RCT Examples ](./tutorial/tutorial-2/r_notebook_some_rct_examples_hhu.ipynb)
+    - Solution: [Linear Wage Prediction](./tutorial/tutorial-2/r_notebook_some_rct_examples_hhu_solution.ipynb)
 * [Pennsylvania reemployment bonus experiment ](./tutorial/tutorial-2/analyzing_rct_reemployment_experiment_hhu.ipynb)
+    - Solution: [Linear Wage Prediction](./tutorial/tutorial-2/analyzing_rct_reemployment_experiment_hhu_solution.ipynb)
