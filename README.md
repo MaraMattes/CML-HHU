@@ -37,3 +37,8 @@ The lecure on May 7 will take place in room 2421.U1.84.
     - Solution: [RCT Examples](./tutorial/tutorial-2/r_notebook_some_rct_examples_hhu_solution.ipynb)
 * [Pennsylvania reemployment bonus experiment ](./tutorial/tutorial-2/analyzing_rct_reemployment_experiment_hhu.ipynb)
     - Solution: [Pennsylvania reemployment bonus experiment](./tutorial/tutorial-2/analyzing_rct_reemployment_experiment_hhu_solution.ipynb)
+
+### Tutorial 3
+
+* [Penalized Linear Regression ](./tutorial/tutorial-3/r_notebook_linear_penalized_regs_hhu.ipynb)
+* [ML-based Prediction of Wages ](./tutorial/tutorial-3/ml_for_wage_prediction_hhu.ipynb)
