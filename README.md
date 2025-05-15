@@ -42,3 +42,4 @@ The lecure on May 7 will take place in room 2421.U1.84.
 
 * [Penalized Linear Regression ](./tutorial/tutorial-3/r_notebook_linear_penalized_regs_hhu.ipynb)
 * [ML-based Prediction of Wages ](./tutorial/tutorial-3/ml_for_wage_prediction_hhu.ipynb)
+    - Solution: [ML-based Prediction of Wages](./tutorial/tutorial-3/ml_for_wage_prediction_hhu_solution.ipynb)
