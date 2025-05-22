@@ -48,3 +48,4 @@ The lecure on May 7 will take place in room 2421.U1.84.
 ### Tutorial 4
 
 * [Convergence Hypothesis ](./tutorial/tutorial-4/double_lasso_for_the_convergence_hypothesis_hhu.ipynb)
+    - Solution: [Convergence Hypothesis](./tutorial/tutorial-4/double_lasso_for_the_convergence_hypothesis_hhu_solution.ipynb)
