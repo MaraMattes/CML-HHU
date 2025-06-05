@@ -55,3 +55,4 @@ The lecure on May 7 will take place in room 2421.U1.84.
 ### Tutorial 5
 
 * [Heterogeneity in the Wage Pay Gap ](./tutorial/tutorial-5/heterogenous_wage_effects_exercise.ipynb)
+    - Solution: [Heterogeneity in the Wage Pay Gap ](./tutorial/tutorial-5/heterogenous_wage_effects_solution.ipynb)
