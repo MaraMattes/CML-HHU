@@ -16,6 +16,7 @@ The lecure on May 7 will take place in room 2421.U1.84.
 * [Lecture 4 ](./lecture/l4/L4.html)
 * [Lecture 5 ](./lecture/l5/L5.html)
 * [Lecture 6 ](./lecture/l6/L6.html)
+* [Lecture 7 ](./lecture/l7/L7.html)
 
 ## Course 2: Tutorials
 
@@ -56,3 +57,9 @@ The lecure on May 7 will take place in room 2421.U1.84.
 
 * [Heterogeneity in the Wage Pay Gap ](./tutorial/tutorial-5/heterogenous_wage_effects_exercise.ipynb)
     - Solution: [Heterogeneity in the Wage Pay Gap ](./tutorial/tutorial-5/heterogenous_wage_effects_solution.ipynb)
+
+### Tutorial 6
+
+* [Collider Bias ](./tutorial/tutorial-6/r_colliderbias_hollywood_hhu.ipynb)
+* [App: Haircutter ](https://digitalcausalitylab.shinyapps.io/hairdresser_example/)
+* [App: Simpson's Paradox ](https://digitalcausalitylab.shinyapps.io/simpsonsparadox/)
