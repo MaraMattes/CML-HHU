@@ -10,6 +10,6 @@ Please also note that the withdrawal deadline for the exam (regardless of whethe
 
 ## Booking of time slots
 
-Please book your oral exam time slot for the first examination date (July 21/22) here: *Link will be provided at the beginning of July* \
+Please book your oral exam time slot for the **first examination date** (July 21/22) here: *Link will be provided at the beginning of July* 
 
-For the second examination date (September 24), please book your oral exam time slot here: *Link will be provided at the beginning of September*
+For the **second examination date** (September 24), please book your oral exam time slot here: *Link will be provided at the beginning of September*
