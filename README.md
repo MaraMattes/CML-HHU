@@ -61,5 +61,6 @@ The lecure on May 7 will take place in room 2421.U1.84.
 ### Tutorial 6
 
 * [Collider Bias ](./tutorial/tutorial-6/r_colliderbias_hollywood_hhu.ipynb)
+    - Solution: [Collider Bias ](./tutorial/tutorial-6/r_colliderbias_hollywood_hhu_solution.ipynb)
 * [App: Haircutter ](https://digitalcausalitylab.shinyapps.io/hairdresser_example/)
 * [App: Simpson's Paradox ](https://digitalcausalitylab.shinyapps.io/simpsonsparadox/)
