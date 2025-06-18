@@ -17,6 +17,7 @@ The lecure on May 7 will take place in room 2421.U1.84.
 * [Lecture 5 ](./lecture/l5/L5.html)
 * [Lecture 6 ](./lecture/l6/L6.html)
 * [Lecture 7 ](./lecture/l7/L7.html)
+* [Lecture 8 ](./lecture/l8/L8.html)
 
 ## Course 2: Tutorials
 
