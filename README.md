@@ -8,7 +8,7 @@ The lecure on May 7 will take place in room 2421.U1.84.
 
 **Guest lecture with one of the developers of the DoubleML package will take place on July 9.**
 
-**In the tutorial on July 10, there will be a summary of the course content and a Q&A session.**
+**On July 10, a lecture will take place instead of a tutorial. This lecture will include a summary of the course content and a Q&A session.**
 
 **There will be no lecture or tutorial on July 16 and July 17.**
 
