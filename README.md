@@ -29,7 +29,8 @@ The lecure on May 7 will take place in room 2421.U1.84.
 
 * Data: \
 [wage2015_subsample_inference.rdata](./data/wage2015_subsample_inference.rdata)\
-[penn_jaedat.sec](./data/penn_jaedat.sec)
+[penn_jaedat.sec](./data/penn_jaedat.sec)\
+[gun_clean.csv](./data/gun_clean.csv)\
 
 ### Tutorial 1
 
