@@ -8,7 +8,7 @@
 <link href="L8_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="L8_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="L8_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.57">
+  <meta name="generator" content="quarto-1.3.433">
 
   <title>Lecture 8</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,7 +32,6 @@
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
-      margin-bottom: 0em;
     }
     .hanging-indent div.csl-entry {
       margin-left:2em;
@@ -177,8 +176,7 @@
   }
 
   .callout.callout-titled .callout-body > .callout-content > :last-child {
-    padding-bottom: 0.5rem;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 
   .callout.callout-titled .callout-icon::before {
@@ -405,7 +403,7 @@ Y = \alpha D + g(X) + \epsilon,  \quad  \mathbb{E}[\epsilon \mid D, X]= 0,
 <ul>
 <li><p>Given a raw treatment, <span class="math inline">\(\bar D\)</span>, we can create the technical treatment <span class="math inline">\(D: = \bar D P(Z)\)</span>, where <span class="math inline">\(P(Z)\)</span> is an <span class="math inline">\(L-\)</span>dimensional dictionary of transformations of the control variables <span class="math inline">\(Z\)</span>.</p></li>
 <li><p>Then we can consider the model <span class="math display">\[Y = \sum_{l=1}^L \alpha_l D_l+ g(Z)  + \epsilon,\]</span> where <span class="math inline">\(\mathbb{E}[\epsilon \mid Z, D]= 0\)</span>. We can re-write this as <span class="math display">\[Y = \alpha_l D_l + g_l(X_l) + \epsilon, \quad \mathbb{E}[\epsilon \mid D_l, X_l] = 0,\]</span> where <span class="math inline">\(g_l(X_l) := \sum_{k \neq l} \alpha_k D_k + g(Z)\)</span> and <span class="math inline">\(X_l:= ( ( D_k)_{k \neq l}, Z)\)</span>.</p></li>
-<li><p>We therefore obtain exactly a model of the partially linear form in <a href="#/dml-inference-in-the-partially-linear-regression-model-plm" class="quarto-xref">Equation&nbsp;1</a>. We can apply DML methods to learn and perform inference on each element of <span class="math inline">\((\alpha_l)_{l=1}^L\)</span> or even carry out joint inference (similarly to what we have done in Lecture 4).</p></li>
+<li><p>We therefore obtain exactly a model of the partially linear form in <a href="#/dml-inference-in-the-partially-linear-regression-model-plm">Equation&nbsp;1</a>. We can apply DML methods to learn and perform inference on each element of <span class="math inline">\((\alpha_l)_{l=1}^L\)</span> or even carry out joint inference (similarly to what we have done in Lecture 4).</p></li>
 </ul>
 </section>
 <section id="partialling-out" class="slide level2">
@@ -413,7 +411,7 @@ Y = \alpha D + g(X) + \epsilon,  \quad  \mathbb{E}[\epsilon \mid D, X]= 0,
 <ul>
 <li>In what follows, we will employ the partialling-out <span class="math inline">\(X\)</span> operation of the form that inputs a random variable <span class="math inline">\(V\)</span> and outputs the residualized form: <span class="math display">\[
 \tilde V : = V - \mathbb{E}[V \mid X].
-\]</span> Applying this operation to <a href="#/dml-inference-in-the-partially-linear-regression-model-plm" class="quarto-xref">Equation&nbsp;1</a> we obtain: <span class="math display">\[
+\]</span> Applying this operation to <a href="#/dml-inference-in-the-partially-linear-regression-model-plm">Equation&nbsp;1</a> we obtain: <span class="math display">\[
 \begin{equation}\label{decompose3}
 \tilde Y = \alpha \tilde D+ \epsilon,  \quad \mathbb{E}[\epsilon \tilde D] =0,
 \end{equation}
@@ -434,7 +432,7 @@ Y = \alpha D + g(X) + \epsilon,  \quad  \mathbb{E}[\epsilon \mid D, X]= 0,
 <section id="fwl-partialling-out-for-partially-linear-model" class="slide level2">
 <h2>FWL Partialling-Out for Partially Linear Model</h2>
 <div id="thm-FWL" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 1</strong></span> Suppose that <span class="math inline">\(Y\)</span>, <span class="math inline">\(X\)</span> and <span class="math inline">\(D\)</span> have bounded second moments. Then the population regression coefficient <span class="math inline">\(\alpha\)</span> can be recovered from the population linear regression of <span class="math inline">\(\tilde Y\)</span> on <span class="math inline">\(\tilde D\)</span>: <span class="math display">\[
+<p><span class="theorem-title"><strong>Theorem 1 </strong></span>Suppose that <span class="math inline">\(Y\)</span>, <span class="math inline">\(X\)</span> and <span class="math inline">\(D\)</span> have bounded second moments. Then the population regression coefficient <span class="math inline">\(\alpha\)</span> can be recovered from the population linear regression of <span class="math inline">\(\tilde Y\)</span> on <span class="math inline">\(\tilde D\)</span>: <span class="math display">\[
 \alpha :=  \{a:  \mathbb{E}[(\tilde Y - a \tilde D) \tilde D]  = 0 \} :=  \mathbb{E}[\tilde D^2]^{-1} \mathbb{E}[\tilde D \tilde Y],
 \]</span> where <span class="math inline">\(\alpha\)</span> is uniquely defined if <span class="math inline">\(D\)</span> cannot be perfectly predicted by <span class="math inline">\(X\)</span>, i.e.&nbsp;if <span class="math inline">\(\mathbb{E} [\tilde D^2] &gt; 0\)</span>.</p>
 </div>
@@ -470,7 +468,7 @@ n^{1/4}( \| \hat \ell_{[k]} - \ell\|_{L^2} +  \| \hat m_{[k]} - m\|_{L^2}) \appr
 <section id="adaptive-inference-on-a-target-parameter-in-plm" class="slide level2">
 <h2>Adaptive Inference on a Target Parameter in PLM</h2>
 <div id="thm-DML" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 2</strong></span> Consider the PLM model in <a href="#/dml-inference-in-the-partially-linear-regression-model-plm" class="quarto-xref">Equation&nbsp;1</a>. Suppose that <span class="math inline">\(\mathbb{E}[\tilde D^2]\)</span> is bounded away from zero and that <span class="math display">\[
+<p><span class="theorem-title"><strong>Theorem 2 </strong></span>Consider the PLM model in <a href="#/dml-inference-in-the-partially-linear-regression-model-plm">Equation&nbsp;1</a>. Suppose that <span class="math inline">\(\mathbb{E}[\tilde D^2]\)</span> is bounded away from zero and that <span class="math display">\[
 n^{1/4}( \| \hat \ell_{[k]} - \ell\|_{L^2} +  \| \hat m_{[k]} - m\|_{L^2}) \approx 0.\]</span> Suppose further regularity conditions listed in <span class="citation" data-cites="DML">Chernozhukov et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span>.</p>
 <p>Then the estimation error in <span class="math inline">\(\check D_i\)</span> and <span class="math inline">\(\check Y_i\)</span> has no first order effect on <span class="math inline">\(\hat\alpha\)</span>: <span class="math display">\[
 \sqrt{n} (\hat\alpha- \alpha)  \approx  \mathbb{E}_n[\tilde D^2]^{-1} \sqrt{n} \mathbb{E}_n[\tilde D \epsilon].
@@ -493,7 +491,7 @@ n^{1/4}( \| \hat \ell_{[k]} - \ell\|_{L^2} +  \| \hat m_{[k]} - m\|_{L^2}) \appr
 <section id="selecting-the-best-ml-learners-of-ell-and-m." class="slide level2">
 <h2>Selecting the Best ML Learners of <span class="math inline">\(\ell\)</span> and <span class="math inline">\(m\)</span>.</h2>
 <ul>
-<li><p>There may be several methods that satisfy the quality requirements of <a href="#/adaptive-inference-on-a-target-parameter-in-plm" class="quarto-xref">Theorem&nbsp;2</a>, and we may therefore ask what ML methods we should use in practice. Our goal would be to select the methods that minimize an upper bound on the bias of the DML estimator.</p></li>
+<li><p>There may be several methods that satisfy the quality requirements of <a href="#/adaptive-inference-on-a-target-parameter-in-plm">Theorem&nbsp;2</a>, and we may therefore ask what ML methods we should use in practice. Our goal would be to select the methods that minimize an upper bound on the bias of the DML estimator.</p></li>
 <li><p>The bias of the DML estimator is controlled by the mean square approximation errors (MSAE): <span class="math display">\[\begin{equation}\label{eq: errors}
 \frac{1}{K} \sum_{k=1}^K  \| \hat \ell_{[k]} - \ell\|^2_{L^2} \text { and } \frac{1}{K} \sum_{k=1}^K  \| \hat m_{[k]} - m \|^2_{L^2}.
 \end{equation}\]</span> Therefore, we can select the best ML method for estimating <span class="math inline">\(m\)</span> and the best method for estimating <span class="math inline">\(\ell\)</span> to minimize the upper bound on the bias. We will be using mean square prediction errors as proxies for MSAEs.</p></li>
@@ -514,19 +512,17 @@ n^{1/4}( \| \hat \ell_{[k]} - \ell\|_{L^2} +  \| \hat m_{[k]} - m\|_{L^2}) \appr
 <li><p>Generally we use the term nuisance parameters to name parameters that are not the target parameters. Here the target parameter is <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\ell\)</span> and <span class="math inline">\(m\)</span> are nuisance parameters.</p></li>
 <li><p>We already discussed Neyman-orthogonality in the context of high-dimensional linear regression models in Lecture 4. We return to and generalize this discussion formally later in this lecture.</p></li>
 <li><p>Naive application of machine learning methods directly to outcome equations may lead to highly biased estimators, because the resulting strategy is not Neyman-orthogonal.</p></li>
-<li><p>The biases in estimation of <span class="math inline">\(g\)</span> in <a href="#/dml-inference-in-the-partially-linear-regression-model-plm" class="quarto-xref">Equation&nbsp;1</a>, which are unavoidable in high-dimensional estimation, create a non-trivial bias in the estimate of the main effect. This bias is large enough to cause failure of conventional inference.</p></li>
+<li><p>The biases in estimation of <span class="math inline">\(g\)</span> in <a href="#/dml-inference-in-the-partially-linear-regression-model-plm">Equation&nbsp;1</a>, which are unavoidable in high-dimensional estimation, create a non-trivial bias in the estimate of the main effect. This bias is large enough to cause failure of conventional inference.</p></li>
 </ul>
 </section>
 <section id="simulation-study-i" class="slide level2">
 <h2>Simulation Study I</h2>
 
-<img data-src="SIMULATEDML.png" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;1: Left: Behavior of a conventional (non-orthogonal) ML estimator. Right: Behavior of the orthogonal, DML estimator.
-</p></section>
+<img data-src="SIMULATEDML.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;1: Left: Behavior of a conventional (non-orthogonal) ML estimator. Right: Behavior of the orthogonal, DML estimator.</p></section>
 <section class="slide level2">
 
 <ul>
-<li><p>The left panel in <a href="#/fig-orth" class="quarto-xref">Figure&nbsp;1</a> illustrates the bias arising due to the use of a non-orthogonal, naive approach for learning <span class="math inline">\(\alpha\)</span>. Specifically, the figure shows the behavior of a conventional (non-orthogonal) ML estimator, <span class="math inline">\(\tilde \alpha\)</span>, in the partially linear model in a simple simulation experiment where we learn <span class="math inline">\(g\)</span> using a random forest. The <span class="math inline">\(g\)</span> in this experiment is a very smooth function of a small number of variables, so the experiment is seemingly favorable to the use of random forests a priori.</p></li>
+<li><p>The left panel in <a href="#/fig-orth">Figure&nbsp;1</a> illustrates the bias arising due to the use of a non-orthogonal, naive approach for learning <span class="math inline">\(\alpha\)</span>. Specifically, the figure shows the behavior of a conventional (non-orthogonal) ML estimator, <span class="math inline">\(\tilde \alpha\)</span>, in the partially linear model in a simple simulation experiment where we learn <span class="math inline">\(g\)</span> using a random forest. The <span class="math inline">\(g\)</span> in this experiment is a very smooth function of a small number of variables, so the experiment is seemingly favorable to the use of random forests a priori.</p></li>
 <li><p>The histogram shows the simulated distribution of the centered estimator, <span class="math inline">\(\tilde \alpha - \alpha\)</span>. The estimator is badly biased, shifted much to the right relative to the true value <span class="math inline">\(\alpha\)</span>. Furthermore, the distribution of the estimator (approximated by the blue histogram) is substantively different from a normal approximation (shown by the red curve) derived under the assumption that the bias is negligible.</p></li>
 </ul>
 </section>
@@ -544,17 +540,15 @@ Figure&nbsp;1: Left: Behavior of a conventional (non-orthogonal) ML estimator. R
 <section class="slide level2">
 
 <ul>
-<li><p>The right panel in <a href="#/fig-orth" class="quarto-xref">Figure&nbsp;1</a> illustrates the behavior of the (Neyman) orthogonal DML estimator, <span class="math inline">\(\hat \alpha\)</span>, in the partially linear model in a simple experiment where we learn nuisance functions <span class="math inline">\(m\)</span> and <span class="math inline">\(\ell\)</span> using random forests. Note that the simulated data are exactly the same as those underlying the left panel. The simulated distribution of the centered estimator, <span class="math inline">\(\hat \alpha - \alpha\)</span>, (given by the blue histogram) illustrates that the estimator is approximately unbiased, concentrates around <span class="math inline">\(\alpha\)</span>, and is approximately normally distributed. The low bias arises because DML uses the Neyman-orthogonal moment equations.</p></li>
-<li><p>The DML algorithm uses a form of sample splitting, called cross-fitting, to make sure our estimated residualized quantities are not overfit. Biases arising from overfitting could result from using highly complex fitting methods such as boosting, deep neural networks and random forests. If we don’t do sample splitting and the ML estimates overfit, we may end up with very large biases (see <a href="#/fig-crossf" class="quarto-xref">Figure&nbsp;2</a>).</p></li>
+<li><p>The right panel in <a href="#/fig-orth">Figure&nbsp;1</a> illustrates the behavior of the (Neyman) orthogonal DML estimator, <span class="math inline">\(\hat \alpha\)</span>, in the partially linear model in a simple experiment where we learn nuisance functions <span class="math inline">\(m\)</span> and <span class="math inline">\(\ell\)</span> using random forests. Note that the simulated data are exactly the same as those underlying the left panel. The simulated distribution of the centered estimator, <span class="math inline">\(\hat \alpha - \alpha\)</span>, (given by the blue histogram) illustrates that the estimator is approximately unbiased, concentrates around <span class="math inline">\(\alpha\)</span>, and is approximately normally distributed. The low bias arises because DML uses the Neyman-orthogonal moment equations.</p></li>
+<li><p>The DML algorithm uses a form of sample splitting, called cross-fitting, to make sure our estimated residualized quantities are not overfit. Biases arising from overfitting could result from using highly complex fitting methods such as boosting, deep neural networks and random forests. If we don’t do sample splitting and the ML estimates overfit, we may end up with very large biases (see <a href="#/fig-crossf">Figure&nbsp;2</a>).</p></li>
 <li><p>Again, this <a href="https://github.com/DoubleML/BasicsDML">shiny app</a> illustrate the problem of overfitting and the use of cross-fitting.</p></li>
 </ul>
 </section>
 <section id="simulation-study-ii" class="slide level2">
 <h2>Simulation Study II</h2>
 
-<img data-src="contrivedSimIVResults.png" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;2: Left: DML distribution without sample-splitting. Right: DML distribution with cross-fitting.
-</p></section>
+<img data-src="contrivedSimIVResults.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;2: Left: DML distribution without sample-splitting. Right: DML distribution with cross-fitting.</p></section>
 <section id="the-effect-of-gun-ownership-on-homicide-rates" class="slide level2">
 <h2>The Effect of Gun Ownership on Homicide Rates</h2>
 <ul>
@@ -599,7 +593,7 @@ Y_{j,t} = \alpha D_{j,(t-1)} + g(Z_{j,t}) + \epsilon_{j,t}.
 </section>
 <section class="slide level2">
 
-<table class="caption-top" data-quarto-postprocess="true">
+<table data-quarto-postprocess="true">
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th"></td>
@@ -702,13 +696,13 @@ H_0 = \frac{1(D=1)}{m_0(X)} -  \frac{1(D=0)}{1-m_0(X) }
 <li>We realize that this representation encompasses two equally valid representations of the target parameter: the regression adjusted representation, <span class="math display">\[
 \theta_0 = \mathbb{E}[g_0 (1,X) - g_0(0,X)],\]</span> and the propensity score reweighting representation, <span class="math display">\[
 \theta_0  =  \mathbb{E}[YH_0].
-\]</span> Unfortunately <em>neither</em> of these representations is Neyman orthogonal, making them unsuitable for plugging-in machine learning estimators. In sharp contrast, the representation in <a href="#/eq-DMLIRM" class="quarto-xref">Equation&nbsp;3</a> is Neyman orthogonal, which implies that we can readily deploy ML methods for estimation using the empirical analog of this expression coupled with cross-fitting.</li>
+\]</span> Unfortunately <em>neither</em> of these representations is Neyman orthogonal, making them unsuitable for plugging-in machine learning estimators. In sharp contrast, the representation in <a href="#/eq-DMLIRM">Equation&nbsp;3</a> is Neyman orthogonal, which implies that we can readily deploy ML methods for estimation using the empirical analog of this expression coupled with cross-fitting.</li>
 </ul>
 </section>
 <section class="slide level2">
 
 <ul>
-<li><p>The construction provided in <a href="#/eq-DMLIRM" class="quarto-xref">Equation&nbsp;3</a> is equally applicable in cases where the propensity score <span class="math inline">\(\Pr(D=1|X)\)</span> is known, as in stratified randomized experiments, and in cases where the propensity score is unknown. When the propensity score is known, the role of regression adjustment in <a href="#/eq-DMLIRM" class="quarto-xref">Equation&nbsp;3</a> is to reduce estimation noise.</p></li>
+<li><p>The construction provided in <a href="#/eq-DMLIRM">Equation&nbsp;3</a> is equally applicable in cases where the propensity score <span class="math inline">\(\Pr(D=1|X)\)</span> is known, as in stratified randomized experiments, and in cases where the propensity score is unknown. When the propensity score is known, the role of regression adjustment in <a href="#/eq-DMLIRM">Equation&nbsp;3</a> is to reduce estimation noise.</p></li>
 <li><p>We will employ the Neyman orthogonal parameterization and cross-fitting to construct a high-quality estimator and perform statistical inference on the target parameter.</p></li>
 </ul>
 </section>
@@ -717,7 +711,7 @@ H_0 = \frac{1(D=1)}{m_0(X)} -  \frac{1(D=0)}{1-m_0(X) }
 <ol type="1">
 <li><p>Partition sample indices into random folds of approximately equal size: <span class="math inline">\(\{1,...,n\} = \cup_{k=1}^K I_k\)</span>. For each <span class="math inline">\(k=1,...,K\)</span>, compute estimators <span class="math inline">\(\hat g_{[k]}\)</span> and <span class="math inline">\(\hat m_{[k]}\)</span> of the conditional expectation functions <span class="math inline">\(g_0\)</span> and <span class="math inline">\(m_0\)</span>, leaving out the <span class="math inline">\(k\)</span>-th block of data, such that <span class="math inline">\(\epsilon\leq \hat m_{[k]} \leq 1-\epsilon\)</span>, and for each <span class="math inline">\(i\in I_k\)</span> compute <span class="math display">\[
 \hat \varphi (W_i) = \hat g_{[k]} (1,X_i) - \hat g_{[k]}(0,X_i) + (Y_i- \hat g_{[k]}(D_i,X_i)) \hat H_i
-\]</span> with <span class="math inline">\(\hat H_i = \frac{1(D_i=1)}{\hat m_{[k]}(X_i)} -  \frac{1(D_i=0)}{1-\hat m_{[k]}(X_i) }\)</span>.</p></li>
+\]</span> with <span class="math inline">\(\hat H_i = \frac{1(D_i=1)}{\hat m_{[k]}(X_i)} - \frac{1(D_i=0)}{1-\hat m_{[k]}(X_i) }\)</span>.</p></li>
 <li><p>Compute the estimator <span class="math inline">\(\hat\theta = \mathbb{E}_n[\hat \varphi (W_i)]\)</span>.</p></li>
 <li><p>Construct standard errors via <span class="math display">\[
 \sqrt{\hat{\mathsf{V}}/n}, \quad \hat{\mathsf{V}}= \mathbb{E}_n[(\hat \varphi(W_i) - \hat \theta)^2]\]</span> and use standard normal critical values for inference.</p></li>
@@ -726,20 +720,20 @@ H_0 = \frac{1(D=1)}{m_0(X)} -  \frac{1(D=0)}{1-m_0(X) }
 <section id="trimming" class="slide level2">
 <h2>Trimming</h2>
 <ul>
-<li>An important practical issue is trimming <span class="math inline">\(|\hat H_i|\)</span> from taking explosively large values. Large values can occur when estimated propensity scores are near 0 or 1, which may indicate failure of the overlap condition (see Lecture 5) and restated in <a href="#/adaptive-inference-on-ate-with-dml" class="quarto-xref">Theorem&nbsp;3</a> below. In the algorithm above, <span class="math inline">\(\hat H_i\)</span> can take on the largest absolute value of <span class="math inline">\(\bar H = 1/\epsilon\)</span>. Therefore, setting <span class="math inline">\(\epsilon =.01\)</span> corresponds to <span class="math inline">\(\bar H =100\)</span>. There does not seem to be a good theoretical or practical resolution on how to do trimming.</li>
+<li>An important practical issue is trimming <span class="math inline">\(|\hat H_i|\)</span> from taking explosively large values. Large values can occur when estimated propensity scores are near 0 or 1, which may indicate failure of the overlap condition (see Lecture 5) and restated in <a href="#/adaptive-inference-on-ate-with-dml">Theorem&nbsp;3</a> below. In the algorithm above, <span class="math inline">\(\hat H_i\)</span> can take on the largest absolute value of <span class="math inline">\(\bar H = 1/\epsilon\)</span>. Therefore, setting <span class="math inline">\(\epsilon =.01\)</span> corresponds to <span class="math inline">\(\bar H =100\)</span>. There does not seem to be a good theoretical or practical resolution on how to do trimming.</li>
 </ul>
 </section>
 <section id="adaptive-inference-on-ate-with-dml" class="slide level2">
 <h2>Adaptive Inference on ATE with DML</h2>
 <div id="thm-DMLATE" class="theorem">
-<p><span class="theorem-title"><strong>Theorem 3</strong></span> Suppose conditions specified in <span class="citation" data-cites="DML">Chernozhukov et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span> hold. In particular, suppose that the overlap condition holds, namely for some <span class="math inline">\(\epsilon&gt;0\)</span> with probability 1 <span class="math inline">\(\epsilon&lt;  m_0(X) &lt; 1-\epsilon\)</span>. If the estimators <span class="math inline">\(\hat g_{[k]}(D,X)\)</span> and <span class="math inline">\(\hat m_{[k]}(X)\)</span> <!-- estimators $\hat g_{[k]}(D,X)$ and $\hat m_{[k]}(X)$ are such that --> <!-- $\epsilon \leq \hat m_{[k]}(X)\leq  1-\epsilon$  and --> provide sufficiently high quality approximations to the best predictors <span class="math inline">\(g_0(D, X)\)</span> and <span class="math inline">\(m_0(X)\)</span> such that <span class="math display">\[
+<p><span class="theorem-title"><strong>Theorem 3 </strong></span>Suppose conditions specified in <span class="citation" data-cites="DML">Chernozhukov et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span> hold. In particular, suppose that the overlap condition holds, namely for some <span class="math inline">\(\epsilon&gt;0\)</span> with probability 1 <span class="math inline">\(\epsilon&lt; m_0(X) &lt; 1-\epsilon\)</span>. If the estimators <span class="math inline">\(\hat g_{[k]}(D,X)\)</span> and <span class="math inline">\(\hat m_{[k]}(X)\)</span> <!-- estimators $\hat g_{[k]}(D,X)$ and $\hat m_{[k]}(X)$ are such that --> <!-- $\epsilon \leq \hat m_{[k]}(X)\leq  1-\epsilon$  and --> provide sufficiently high quality approximations to the best predictors <span class="math inline">\(g_0(D, X)\)</span> and <span class="math inline">\(m_0(X)\)</span> such that <span class="math display">\[
 \| \hat g_{[k]}  - g_0  \|_{L^2} + \| \hat m_{[k]}  - m_0\|_{L^2}
 + \sqrt{n} \| \hat g_{[k]} - g_0\|_{L^2}  \| \hat m_{[k]} - m_0 \|_{L^2} \approx 0,
 \]</span> then the estimation error in these nuisance parameter has no first order effect on <span class="math inline">\(\hat \theta\)</span>: <span class="math display">\[
 \sqrt{n} (\hat \theta - \theta_0) \approx \sqrt{n} \mathbb{E}_n [\varphi_0(W) - \theta_0].
 \]</span> Consequently, the estimator concentrates in <span class="math inline">\(1/\sqrt{n}\)</span> neighborhood of <span class="math inline">\(\theta_0\)</span>, with deviations controlled by the Gaussian law: <span class="math display">\[
 \sqrt{n} (\hat \theta - \theta_0)  \overset{{\mathrm{D}}}{\rightarrow} N(0 ,  \mathsf{V})
-\]</span> where <span class="math inline">\(\mathsf{V} =  \mathbb{E}[(\varphi_0(W) - \theta_0)^2]\)</span>.</p>
+\]</span> where <span class="math inline">\(\mathsf{V} = \mathbb{E}[(\varphi_0(W) - \theta_0)^2]\)</span>.</p>
 </div>
 </section>
 <section class="slide level2">
@@ -777,33 +771,27 @@ where <span class="math inline">\(G\)</span> is a group indicator defined in ter
 <section class="slide level2">
 
 
-<img data-src="dag8.4.png" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;3: Three Causal DAGs for analysis of the 401(K) example in which adjusting for <span class="math inline">\(X\)</span> is a valid identification strategy. The bottom figure encompasses the other two as special cases.
-</p></section>
+<img data-src="dag8.4.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;3: Three Causal DAGs for analysis of the 401(K) example in which adjusting for <span class="math inline">\(X\)</span> is a valid identification strategy. The bottom figure encompasses the other two as special cases.</p></section>
 <section class="slide level2">
 
 <ul>
-<li><p>It is useful to think about a causal diagram that represents our thinking about identification in this example. In <a href="#/fig-401kDAGs" class="quarto-xref">Figure&nbsp;3</a>, we provide three example DAGs for <span class="math inline">\(Y\)</span>, the outcome; <span class="math inline">\(D\)</span>, the 401(K) eligibility offer which depends on firm characteristics, <span class="math inline">\(F\)</span>, which are not observed; and <span class="math inline">\(X\)</span>, the worker characteristics. In one structure, <span class="math inline">\(F\)</span> determines the workers characteristics (via the hiring decision), so we have <span class="math inline">\(F \to X\)</span>. In another structure, workers determine the characteristics of the company they choose to work at, <span class="math inline">\(X \to F\)</span>. Finally, in the last structure <span class="math inline">\(F\)</span>, <span class="math inline">\(X\)</span>, and <span class="math inline">\(D\)</span> are jointly determined by a set of latent factors <span class="math inline">\(U\)</span>. In any of these cases, <span class="math inline">\(X\)</span> a valid adjustment set because it is the only parent of <span class="math inline">\(Y\)</span> (other than <span class="math inline">\(D\)</span>).</p></li>
-<li><p>It is also useful to consider structures that would break down the identification strategy. We illustrate two such structures in <a href="#/fig-401kBadDAG1" class="quarto-xref">Figure&nbsp;4</a> and <a href="#/fig-401kBadDAG2" class="quarto-xref">Figure&nbsp;5</a>. In these figures, we introduce a node for the employer match amount <span class="math inline">\(M\)</span>, which could mediate the effect of 401(k) eligibility and have an important effect on financial wealth. Employers often offer a benefit where they will match a proportion of an employee’s contribution to their 401k, up to a limit. The limit is referred to as the employer match amount, and averages between 4 and 5% of employee’s salaries.</p></li>
+<li><p>It is useful to think about a causal diagram that represents our thinking about identification in this example. In <a href="#/fig-401kDAGs">Figure&nbsp;3</a>, we provide three example DAGs for <span class="math inline">\(Y\)</span>, the outcome; <span class="math inline">\(D\)</span>, the 401(K) eligibility offer which depends on firm characteristics, <span class="math inline">\(F\)</span>, which are not observed; and <span class="math inline">\(X\)</span>, the worker characteristics. In one structure, <span class="math inline">\(F\)</span> determines the workers characteristics (via the hiring decision), so we have <span class="math inline">\(F \to X\)</span>. In another structure, workers determine the characteristics of the company they choose to work at, <span class="math inline">\(X \to F\)</span>. Finally, in the last structure <span class="math inline">\(F\)</span>, <span class="math inline">\(X\)</span>, and <span class="math inline">\(D\)</span> are jointly determined by a set of latent factors <span class="math inline">\(U\)</span>. In any of these cases, <span class="math inline">\(X\)</span> a valid adjustment set because it is the only parent of <span class="math inline">\(Y\)</span> (other than <span class="math inline">\(D\)</span>).</p></li>
+<li><p>It is also useful to consider structures that would break down the identification strategy. We illustrate two such structures in <a href="#/fig-401kBadDAG1">Figure&nbsp;4</a> and <a href="#/fig-401kBadDAG2">Figure&nbsp;5</a>. In these figures, we introduce a node for the employer match amount <span class="math inline">\(M\)</span>, which could mediate the effect of 401(k) eligibility and have an important effect on financial wealth. Employers often offer a benefit where they will match a proportion of an employee’s contribution to their 401k, up to a limit. The limit is referred to as the employer match amount, and averages between 4 and 5% of employee’s salaries.</p></li>
 </ul>
 </section>
 <section class="slide level2">
 
 
-<img data-src="dag8.5.png" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;4: A DAG Structure where adjusting for <span class="math inline">\(X\)</span> is not sufficient. If there is no arrow from <span class="math inline">\(F\)</span> to <span class="math inline">\(M\)</span>, adjusting for <span class="math inline">\(X\)</span> is sufficient.
-</p></section>
+<img data-src="dag8.5.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;4: A DAG Structure where adjusting for <span class="math inline">\(X\)</span> is not sufficient. If there is no arrow from <span class="math inline">\(F\)</span> to <span class="math inline">\(M\)</span>, adjusting for <span class="math inline">\(X\)</span> is sufficient.</p></section>
 <section class="slide level2">
 
 
-<img data-src="dag8.6.png" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;5: Another DAG Structure where adjusting for <span class="math inline">\(X\)</span> is not sufficient. Here the latent confounder <span class="math inline">\(U\)</span> affects all variables, so even in the absence of an arrow connecting <span class="math inline">\(F\)</span> to <span class="math inline">\(M\)</span>, causal effects cannot be determined after adjusting for <span class="math inline">\(X\)</span>. The presence of such latent confounders is always a threat to causal interpretability of any observational study.
-</p></section>
+<img data-src="dag8.6.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;5: Another DAG Structure where adjusting for <span class="math inline">\(X\)</span> is not sufficient. Here the latent confounder <span class="math inline">\(U\)</span> affects all variables, so even in the absence of an arrow connecting <span class="math inline">\(F\)</span> to <span class="math inline">\(M\)</span>, causal effects cannot be determined after adjusting for <span class="math inline">\(X\)</span>. The presence of such latent confounders is always a threat to causal interpretability of any observational study.</p></section>
 <section class="slide level2">
 
 <ul>
-<li><p>In <a href="#/fig-401kBadDAG1" class="quarto-xref">Figure&nbsp;4</a>, we suppose that <span class="math inline">\(M\)</span> is determined by unobserved firm characteristics, <span class="math inline">\(F\)</span>, and worker characteristics, <span class="math inline">\(X\)</span>. In this case, adjustment for <span class="math inline">\(X\)</span> is not sufficient as there is a path from latent firm characteristics, which are related to the treatment and to the outcome that is not closed by <span class="math inline">\(X\)</span>. However, if <span class="math inline">\(M\)</span> is determined solely by <span class="math inline">\(D\)</span> and <span class="math inline">\(X\)</span> so the red arrow is erased, adjustment for <span class="math inline">\(X\)</span> is sufficient. Therefore, interpreting our the target parameter of our estimation strategy as a causal effect is only valid if the match amount is independent of <span class="math inline">\(F\)</span> given <span class="math inline">\(D\)</span> and <span class="math inline">\(X\)</span>. Otherwise, the default interpretation is that we are estimating predictive effects of 401(k) eligibility.</p></li>
-<li><p>In the second example, <a href="#/fig-401kBadDAG2" class="quarto-xref">Figure&nbsp;5</a>, we maintain the assumption that <span class="math inline">\(M\)</span> is independent of <span class="math inline">\(F\)</span> given <span class="math inline">\(D\)</span> and <span class="math inline">\(X\)</span> by eliminating the arrow between nodes <span class="math inline">\(F\)</span> and <span class="math inline">\(M\)</span>. However, we now allow for the possibility that latent variables <span class="math inline">\(U\)</span> have a direct effect on <span class="math inline">\(Y\)</span>; that is, we have an unobserved confounder or omitted variable. In this example, such a counfounder may be unobserved risk preferences that relate to an individual’s preference over jobs, an individual’s characteristics, but also have direct effects on savings decisions not channeled purely through observed individual or job characteristics.</p></li>
+<li><p>In <a href="#/fig-401kBadDAG1">Figure&nbsp;4</a>, we suppose that <span class="math inline">\(M\)</span> is determined by unobserved firm characteristics, <span class="math inline">\(F\)</span>, and worker characteristics, <span class="math inline">\(X\)</span>. In this case, adjustment for <span class="math inline">\(X\)</span> is not sufficient as there is a path from latent firm characteristics, which are related to the treatment and to the outcome that is not closed by <span class="math inline">\(X\)</span>. However, if <span class="math inline">\(M\)</span> is determined solely by <span class="math inline">\(D\)</span> and <span class="math inline">\(X\)</span> so the red arrow is erased, adjustment for <span class="math inline">\(X\)</span> is sufficient. Therefore, interpreting our the target parameter of our estimation strategy as a causal effect is only valid if the match amount is independent of <span class="math inline">\(F\)</span> given <span class="math inline">\(D\)</span> and <span class="math inline">\(X\)</span>. Otherwise, the default interpretation is that we are estimating predictive effects of 401(k) eligibility.</p></li>
+<li><p>In the second example, <a href="#/fig-401kBadDAG2">Figure&nbsp;5</a>, we maintain the assumption that <span class="math inline">\(M\)</span> is independent of <span class="math inline">\(F\)</span> given <span class="math inline">\(D\)</span> and <span class="math inline">\(X\)</span> by eliminating the arrow between nodes <span class="math inline">\(F\)</span> and <span class="math inline">\(M\)</span>. However, we now allow for the possibility that latent variables <span class="math inline">\(U\)</span> have a direct effect on <span class="math inline">\(Y\)</span>; that is, we have an unobserved confounder or omitted variable. In this example, such a counfounder may be unobserved risk preferences that relate to an individual’s preference over jobs, an individual’s characteristics, but also have direct effects on savings decisions not channeled purely through observed individual or job characteristics.</p></li>
 </ul>
 </section>
 <section class="slide level2">
@@ -816,6 +804,7 @@ Figure&nbsp;5: Another DAG Structure where adjusting for <span class="math inlin
 </section>
 <section id="empirical-results" class="slide level2">
 <h2>Empirical Results</h2>
+
 <table>
   <caption>Estimated Effect of 401(k) Eligibility on Net Financial Assets</caption>
   <thead>
@@ -875,9 +864,7 @@ Figure&nbsp;5: Another DAG Structure where adjusting for <span class="math inlin
 <li>An important nonlinear IV model is the local average treatment effect model (LATE), proposed by Imbens and Angrist (<span class="citation" data-cites="imbens:angrist:94">Imbens and Angrist (<a href="#/bibliography" role="doc-biblioref" onclick="">1994</a>)</span>).</li>
 </ul>
 
-<img data-src="dag8.7.png" class="r-stretch quarto-figure-center"><p class="caption">
-Figure&nbsp;6: Green arrow denotes a monotone functional relation.
-</p></section>
+<img data-src="dag8.7.png" class="r-stretch quarto-figure-center"><p class="caption">Figure&nbsp;6: Green arrow denotes a monotone functional relation.</p></section>
 <section class="slide level2">
 
 <ul>
@@ -961,7 +948,7 @@ H (p) :=   \frac{Z}{p(X)} - \frac{(1 - Z)}{1 - p(X)} .
 </section>
 <section class="slide level2">
 
-<p>Suppose conditions specified in <span class="citation" data-cites="DML">Chernozhukov et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span> hold. In particular, suppose that the overlap condition holds; namely, for some <span class="math inline">\(\epsilon&gt;0\)</span> with probability 1, <span class="math inline">\(\epsilon&lt;  p_0(X) &lt; 1-\epsilon\)</span>. Further, suppose <span class="math inline">\(\epsilon &lt; \hat p_{[k]}(X)&lt; 1-\epsilon\)</span> and that estimators <span class="math inline">\(\hat p_{[k]}\)</span>, <span class="math inline">\(\hat m_{[k]}\)</span>, <span class="math inline">\(\hat \mu_{[k]}\)</span> provide high quality approximation to <span class="math inline">\(p_0\)</span>, <span class="math inline">\(m_0\)</span>, and <span class="math inline">\(mu_0\)</span> in the sense that <span class="math display">\[
+<p>Suppose conditions specified in <span class="citation" data-cites="DML">Chernozhukov et al. (<a href="#/bibliography" role="doc-biblioref" onclick="">2018</a>)</span> hold. In particular, suppose that the overlap condition holds; namely, for some <span class="math inline">\(\epsilon&gt;0\)</span> with probability 1, <span class="math inline">\(\epsilon&lt; p_0(X) &lt; 1-\epsilon\)</span>. Further, suppose <span class="math inline">\(\epsilon &lt; \hat p_{[k]}(X)&lt; 1-\epsilon\)</span> and that estimators <span class="math inline">\(\hat p_{[k]}\)</span>, <span class="math inline">\(\hat m_{[k]}\)</span>, <span class="math inline">\(\hat \mu_{[k]}\)</span> provide high quality approximation to <span class="math inline">\(p_0\)</span>, <span class="math inline">\(m_0\)</span>, and <span class="math inline">\(mu_0\)</span> in the sense that <span class="math display">\[
 n^{1/2} \|\hat  p_0 - p_0 \|_{L^2} \times \Big(\|\hat  \mu_0 - \mu_0 \|_{L^2} + \| \hat m_0 - m_0\|_{L^2}\Big) \approx 0.
 \]</span> Then estimation of the nuisance parameters does not affect the behavior of the estimator to the first order; namely, <span class="math display">\[
 \sqrt{n}(\hat \theta - \theta_0) \approx \sqrt{n} \mathbb{E}_n[\varphi_0(W)],
@@ -995,6 +982,7 @@ n^{1/2} \|\hat  p_0 - p_0 \|_{L^2} \times \Big(\|\hat  \mu_0 - \mu_0 \|_{L^2} + 
 </section>
 <section id="dml-estimates-of-late-on-401k-participation-on-net-financial-assets" class="slide level2">
 <h2>DML Estimates of LATE on 401(k) Participation on Net Financial Assets</h2>
+
 <table>
   <thead>
     <tr>
@@ -1041,7 +1029,7 @@ n^{1/2} \|\hat  p_0 - p_0 \|_{L^2} \times \Big(\|\hat  \mu_0 - \mu_0 \|_{L^2} + 
 \partial_\eta \mathsf{M}(\theta_0, \eta)  \Big |_{\eta = \eta_0} =  0.
 \end{align}
 \qquad(5)\]</span></span></p></li>
-<li><p>Here, <a href="#/the-first-key-input" class="quarto-xref">Equation&nbsp;5</a> ensures that the moment condition in <a href="#/generic-debiased-or-double-machine-learning" class="quarto-xref">Equation&nbsp;4</a> used to identify and estimate <span class="math inline">\(\theta_0\)</span> is insensitive to small perturbations of the nuisance function <span class="math inline">\(\eta\)</span> around <span class="math inline">\(\eta_0\)</span>.</p></li>
+<li><p>Here, <a href="#/the-first-key-input">Equation&nbsp;5</a> ensures that the moment condition in <a href="#/generic-debiased-or-double-machine-learning">Equation&nbsp;4</a> used to identify and estimate <span class="math inline">\(\theta_0\)</span> is insensitive to small perturbations of the nuisance function <span class="math inline">\(\eta\)</span> around <span class="math inline">\(\eta_0\)</span>.</p></li>
 </ul>
 </section>
 <section class="slide level2">
@@ -1075,7 +1063,7 @@ n^{1/2} \|\hat  p_0 - p_0 \|_{L^2} \times \Big(\|\hat  \mu_0 - \mu_0 \|_{L^2} + 
 <h2>Generic DML Algortihm</h2>
 <p>Provide the data frame <span class="math inline">\((W_i)_{i=1}^n\)</span>, the Neyman-orthogonal score/moment function <span class="math inline">\(\psi(W, \theta, \eta)\)</span> that identifies the statistical parameter of interest, and the name and model for ML estimation method(s) for <span class="math inline">\(\eta\)</span>.</p>
 <ol type="1">
-<li><p><strong>Train ML Predictors on Folds:</strong> Take a K-fold random partition <span class="math inline">\((I_k)_{k=1}^K\)</span> of observation indices <span class="math inline">\(\{1,..., n\}\)</span> such that the size of each fold is about the same. For each <span class="math inline">\(k \in \{1,\ldots,K\}\)</span>, construct a high-quality machine learning estimator <span class="math inline">\(\hat  \eta_{[k]}\)</span> that depends only on a subset of data <span class="math inline">\((X_i)_{i \not \in I_k}\)</span> that excludes the <span class="math inline">\(k\)</span>-th fold.</p></li>
+<li><p><strong>Train ML Predictors on Folds:</strong> Take a K-fold random partition <span class="math inline">\((I_k)_{k=1}^K\)</span> of observation indices <span class="math inline">\(\{1,..., n\}\)</span> such that the size of each fold is about the same. For each <span class="math inline">\(k \in \{1,\ldots,K\}\)</span>, construct a high-quality machine learning estimator <span class="math inline">\(\hat \eta_{[k]}\)</span> that depends only on a subset of data <span class="math inline">\((X_i)_{i \not \in I_k}\)</span> that excludes the <span class="math inline">\(k\)</span>-th fold.</p></li>
 <li><p><strong>Estimate Moments:</strong> Letting <span class="math inline">\(k(i) = \{ k : i \in I_k\}\)</span>, construct the moment equation estimate <span class="math display">\[
 \hat{\mathsf{M}}(\theta, \hat \eta) =  \mathbb{E}_{n}[ \psi(W_i;  \theta, \hat \eta_{[k(i)]} ) ]
 \]</span></p></li>
@@ -1105,6 +1093,7 @@ n^{1/2} \|\hat  p_0 - p_0 \|_{L^2} \times \Big(\|\hat  \mu_0 - \mu_0 \|_{L^2} + 
 <h2>Further Material and Notebooks</h2>
 <ul>
 <li><p>An online tutorial on DoubleML for double/debiased machine learning in R and Python can be found <a href="https://www.youtube.com/watch?v=ErecsyKEq74">here</a>.</p></li>
+<li><p>Notebook with exercises <a href="https://drive.google.com/file/d/1zQi_EQH75Gsfzl3SCfzKXF7lEWorcEVT/view?usp=sharing">DML Gun Ownership Exercises</a>.</p></li>
 <li><p>Notebook on <a href="https://drive.google.com/file/d/1xfEUTnJzCNczZFMc5ElOqldbuxyATri_/view?usp=sharing">Gun Ownership</a>.</p></li>
 <li><p>Notebook on <a href="https://colab.research.google.com/drive/1igC4zlBokApk39IUBiGKpbCYmDlqE3Yl?usp=sharing">4O1(k) eligibility/participation</a>.</p></li>
 <li><p>Notebook on <a href="https://drive.google.com/file/d/10FNLvfr0rr58EKUTk8D8OisderIAl4ix/view?usp=sharing">identification</a> in 4O1(k) example.</p></li>
@@ -1113,12 +1102,10 @@ n^{1/2} \|\hat  p_0 - p_0 \|_{L^2} \times \Big(\|\hat  \mu_0 - \mu_0 \|_{L^2} + 
 </section>
 <section id="bibliography" class="slide level2 smaller scrollable">
 <h2>Bibliography</h2>
-<div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 <p>CML</p>
 </div>
-</div>
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-DML" class="csl-entry" role="listitem">
 Chernozhukov, Victor, Denis Chetverikov, Mert Demirer, Esther Duflo, Christian Hansen, Whitney Newey, and James Robins. 2018. <span>“Double/Debiased Machine Learning for Treatment and Structural Parameters.”</span> <em>The Econometrics Journal</em> 21 (1): C1–68.
 </div>
@@ -1166,6 +1153,7 @@ Wooldridge, Jeffrey M. 2021. <span>“Two-Way Fixed Effects, the Two-Way Mundlak
       Reveal.initialize({
 'controlsAuto': true,
 'previewLinksAuto': true,
+'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -1383,7 +1371,18 @@ Wooldridge, Jeffrey M. 2021. <span>“Two-Way Fixed Effects, the Two-Way Mundlak
         }
         return false;
       }
-      const onCopySuccess = function(e) {
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1415,50 +1414,11 @@ Wooldridge, Jeffrey M. 2021. <span>“Two-Way Fixed Effects, the Two-Way Mundlak
         }, 1000);
         // clear code selection
         e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
       });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        // For code content inside modals, clipBoardJS needs to be initialized with a container option
-        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp('/' + window.location.host + '/');
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-        }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
-            }
-          }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      function tippyHover(el, contentFn) {
         const config = {
           allowHTML: true,
+          content: contentFn,
           maxWidth: 500,
           delay: 100,
           arrow: false,
@@ -1468,17 +1428,8 @@ Wooldridge, Jeffrey M. 2021. <span>“Two-Way Fixed Effects, the Two-Way Mundlak
           interactive: true,
           interactiveBorder: 10,
           theme: 'light-border',
-          placement: 'bottom-start',
+          placement: 'bottom-start'
         };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
         window.tippy(el, config); 
@@ -1492,11 +1443,7 @@ Wooldridge, Jeffrey M. 2021. <span>“Two-Way Fixed Effects, the Two-Way Mundlak
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
+          return note.innerHTML;
         });
       }
       const findCites = (el) => {

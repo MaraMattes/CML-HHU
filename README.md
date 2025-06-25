@@ -69,3 +69,8 @@ The lecure on May 7 will take place in room 2421.U1.84.
     - Solution: [Collider Bias ](./tutorial/tutorial-6/r_colliderbias_hollywood_hhu_solution.ipynb)
 * [App: Haircutter ](https://digitalcausalitylab.shinyapps.io/hairdresser_example/)
 * [App: Simpson's Paradox ](https://digitalcausalitylab.shinyapps.io/simpsonsparadox/)
+
+### Tutorial 7
+
+* [DML Gun Ownership Exercises ](./tutorial/tutorial-7/dml_inference_for_gun_ownership_exercises.ipynb)
+* [DML Gun Ownership ](./tutorial/tutorial-7/dml_inference_for_gun_ownership_hhu.ipynb)
