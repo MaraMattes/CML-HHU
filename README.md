@@ -32,6 +32,12 @@ The lecure on May 7 will take place in room 2421.U1.84.
 [penn_jaedat.sec](./data/penn_jaedat.sec)\
 [gun_clean.csv](./data/gun_clean.csv)
 
+
+**Please note:** Clicking on a notebook link no longer starts the download automatically. 
+Instead, hold the ´Alt´ key (or ´Option´ on Mac) and click the link to download the notebook directly.
+Alternatively, just click the notebook link and then use right-click -> 'Save As...' to download the notebook manually.
+
+
 ### Tutorial 1
 
 * [Overfitting ](./tutorial/tutorial-1/r_notebook_linear_model_overfiting_hhu.ipynb)
