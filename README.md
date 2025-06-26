@@ -74,4 +74,5 @@ The lecure on May 7 will take place in room 2421.U1.84.
 ### Tutorial 7
 
 * [DML Gun Ownership Exercises ](./tutorial/tutorial-7/dml_inference_for_gun_ownership_exercises.ipynb)
+    - Solution: [DML Gun Ownership Exercises ](./tutorial/tutorial-7/dml_inference_for_gun_ownership_exercises_solution.ipynb)
 * [DML Gun Ownership ](./tutorial/tutorial-7/dml_inference_for_gun_ownership_hhu.ipynb)
