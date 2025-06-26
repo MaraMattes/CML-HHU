@@ -34,7 +34,7 @@ The lecure on May 7 will take place in room 2421.U1.84.
 
 
 **Please note:** Clicking on a notebook link no longer starts the download automatically. 
-Instead, hold the ´Alt´ key (or ´Option´ on Mac) and click the link to download the notebook directly.
+Instead, hold the Alt key (or Option on Mac) and click the link to download the notebook directly.
 Alternatively, just click the notebook link and then use right-click -> 'Save As...' to download the notebook manually.
 
 
