@@ -22,6 +22,7 @@ The lecure on May 7 will take place in room 2421.U1.84.
 * [Lecture 6 ](./lecture/l6/L6.html)
 * [Lecture 7 ](./lecture/l7/L7.html)
 * [Lecture 8 ](./lecture/l8/L8.html)
+* [Guest lecture ](https://docs.doubleml.org/doubleml-presentations/presentations/did/did_multi_period.html#/title-slide)
 
 ## Course 2: Tutorials
 
@@ -82,3 +83,8 @@ Alternatively, just click the notebook link and then use right-click -> 'Save As
 * [DML Gun Ownership Exercises ](./tutorial/tutorial-7/dml_inference_for_gun_ownership_exercises.ipynb)
     - Solution: [DML Gun Ownership Exercises ](./tutorial/tutorial-7/dml_inference_for_gun_ownership_exercises_solution.ipynb)
 * [DML Gun Ownership ](/.tutorial/tutorial-7/dml_inference_for_gun_ownership_hhu.ipynb)
+
+### Tutorial 8
+
+* [DML for 401(k) ](./tutorial/tutorial-8/R_double_ml_pension_hhu.ipynb)
+* [Identification 401(k) ](./tutorial/tutorial-8/identification_analysis_of_401_k_example_w_dags.ipynb)
