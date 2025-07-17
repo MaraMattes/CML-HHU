@@ -6,11 +6,13 @@ There will be no lectures and tutorials during the weeks of April 7-11 and April
 
 The lecure on May 7 will take place in room 2421.U1.84.
 
-**Guest lecture with one of the developers of the DoubleML package will take place on July 9.**
+Guest lecture with one of the developers of the DoubleML package will take place on July 9.
 
-**On July 10, a lecture will take place instead of a tutorial. This lecture will include a summary of the course content and a Q&A session.**
+On July 10, a lecture will take place instead of a tutorial. This lecture will include a summary of the course content and a Q&A session.
 
-**There will be no lecture or tutorial on July 16 and July 17.**
+There will be no lecture or tutorial on July 16 and July 17.
+
+**Please note: The oral exams (July 21/22) will take place in seminar room 2 (building oeconomicum).**
 
 ## Course 1: Lectures
 * [Lecture 0 ](./lecture/l0/L0.html)

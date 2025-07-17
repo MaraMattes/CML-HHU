@@ -2,7 +2,7 @@
 
 There will be an **oral exam** at the end of the semester. 
 
-The first examination will take place on **July 21, 2025** and/or **July 22, 2025**. \
+The first examination will take place on **July 21, 2025** and **July 22, 2025** in seminar room 2 (building oeconomicum). \
 The second examination date is **September 24, 2025**.
 
 Please register for the oral exam in Causal Machine Learning during the [exam registration period (**May 19, 2025 to June 6, 2025**)](https://www.hhu.de/fileadmin/redaktion/ZUV/Dezernat_1/Pruefungsamt/documents/pdf/Pruefungstermine/2025/Anmeldetermine_WiWi_WS_2024-25_und_SoSe_2025.pdf). Only one exam date is listed in the Student Portal ([*Studierendenportal*](https://studierende.hhu.de)). Register for this date if you plan to take the exam on either the first examination date (July 21/22) or the second examination date (September 24). \
