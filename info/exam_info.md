@@ -12,4 +12,4 @@ Please also note that the **withdrawal deadline** for the exam (regardless of wh
 
 Please book your oral exam time slot for the **first examination date** (July 21/22) until **July 13** here: [link to the booking system](https://terminplaner6.dfn.de/b/83db5f2e9b692648dfdbbdbcb3fafaac-1274089)
 
-For the **second examination date** (September 24), please book your oral exam time slot here: [link to the booking system](https://terminplaner6.dfn.de/b/d8f10c3347408da9be695a25244f2faa-1274196)
+For the **second examination date** (September 24), please book your oral exam time slot by **September 16** here: [link to the booking system](https://terminplaner6.dfn.de/b/d8f10c3347408da9be695a25244f2faa-1274196)
