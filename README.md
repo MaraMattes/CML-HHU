@@ -12,7 +12,7 @@ On July 10, a lecture will take place instead of a tutorial. This lecture will i
 
 There will be no lecture or tutorial on July 16 and July 17.
 
-**Please note: The oral exams (July 21/22) will take place in seminar room 2 (building oeconomicum).**
+**Please note: The oral exams (September 24) will take place in seminar room 1 (building oeconomicum).**
 
 ## Course 1: Lectures
 * [Lecture 0 ](./lecture/l0/L0.html)
